@@ -29,8 +29,7 @@ def main():
         #player.draw(screen)
 
         # switch to groups to manage game objects
-        for game_obj in updatable: 
-            game_obj.update(dt)
+        updatable.update(dt)
 
         for game_obj in drawable:
             game_obj.draw(screen)
