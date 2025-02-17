@@ -51,7 +51,7 @@ def main():
             for bullet in shots: # bullet collision check
                 if bullet.collides_with(asteroid):
                     bullet.kill()
-                    asteroid.kill()
+                    asteroid.split()
 
         for game_obj in drawable:
             game_obj.draw(screen)
